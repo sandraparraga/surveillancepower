@@ -1,0 +1,373 @@
+@font-face {
+  font-family: "Coconat";
+  src: url("../assets/type/Coconat-BoldExt.woff") format("woff"), url("../assets/type/Coconat-BoldExt.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Light"), url("../assets/type/HelveticaNeueLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Helvetica Neue Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Light Italic"), url("../assets/type/HelveticaNeueLightItalic.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  font-size: 40px;
+  margin: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* -------------------------- ESTILOS DE TEXTO -------------------------- */
+p {
+  font-family: Helvetica Neue Light;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+p span {
+  font-family: Helvetica Neue Light Italic;
+}
+
+.verde {
+  color: #00ffc2;
+}
+
+.gris {
+  color: #cccccc;
+}
+
+.negro {
+  color: #141414;
+}
+
+.naranja {
+  color: #ffb800;
+}
+
+.blanco {
+  color: #fcfbfb;
+}
+
+.rosa {
+  color: #ff20fe;
+}
+
+/* numero apartado */
+.numero {
+  font-family: adriane, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 126px;
+  color: transparent;
+  -webkit-text-stroke: 3px #fcfbfb;
+}
+
+/* nombre apartado */
+h2 {
+  font-family: Adriane Text;
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fcfbfb;
+}
+
+/* subapartado */
+h3 {
+  font-family: Adriane Text;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40.5px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 45px;
+}
+
+/* pie de foto */
+h4 {
+  font-family: Helvetica Neue Light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* cita */
+h5 {
+  font-family: Adriane Text;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 60px;
+}
+
+/* -------------------------- PORTADA + TÍTULO -------------------------- */
+.portada {
+  background-image: url("../assets/portada.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: Coconat;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 108.8%;
+  text-align: center;
+  color: rgb(14, 14, 14);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* -------------------------- ABSTRACT -------------------------- */
+
+.abstractES {
+  font-family: Helvetica Neue Light;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 25px;
+  color: #00ffc2;
+  padding: 0 24%;
+  position: relative;
+
+  margin-bottom: 45px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 9.5%;
+  padding: 0px 13%;
+}
+
+/* -------------------------- CAJAS GENERALES -------------------------- */
+
+.doscolumnas {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 7.4%;
+  padding-right: 6%;
+}
+
+.apartado {
+  padding: 70px 6vw;
+}
+
+.tituloapartado {
+  margin-left: 5%;
+  margin-bottom: 87px;
+}
+.infoapartado {
+  font-family: Adriane Text;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fcfbfb;
+
+  width: 586px;
+  border: 2px solid #fcfbfb;
+  box-sizing: border-box;
+  border-radius: 112px;
+  padding: 20px 35px 18px 70px;
+}
+
+.titulo-info {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 87px;
+}
+
+img {
+  border-radius: 30px;
+}
+
+.doscolumnasB {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 7.4%;
+}
+
+.centrado {
+  display: block;
+  margin: auto auto;
+}
+
+/* -------------------------- ÍNDICE -------------------------- */
+.t-index {
+  font-family: Helvetica Neue Light;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 45px;
+  color: #141414;
+}
+
+#degradado {
+  background: linear-gradient(180deg, #141414 30%, #00ffc2 60%, #141414 80%);
+}
+
+#indice {
+  margin: auto 0;
+}
+
+sup {
+  font-size: 60%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.45em;
+}
+
+.sub1 {
+  padding-left: 30px;
+}
+
+.sub2 {
+  padding-left: 75px;
+}
+
+.horizontal-index {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* -------------------------- SCROLL INFINITO -------------------------- */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.scroll-inf {
+  border-radius: 0px;
+  width: 100%;
+}
+
+/* -------------------------- COOKIES -------------------------- */
+#cookies {
+  font-family: Adriane Text;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 67px;
+}
+
+#imgencuesta {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+}
+
+.img-expo {
+  height: 375px;
+}
+
+/* -------------------------- SURVEILLANCE POWER -------------------------- */
+#bocetos {
+  max-width: 100%;
+  height: auto;
+  margin: 50px auto 0 auto;
+  border: 2px solid #ffb800;
+}
+
+.marcopractico {
+  text-align: center;
+}
+
+.doscolumnasC {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 2.7%;
+}
+
+.corazon {
+  width: 385px;
+}
+
+#corazones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pasos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+.paso {
+  font-family: Adriane Text;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  margin-left: 5px;
+}
+
+#montaje {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 7.4%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#placa {
+  max-width: 40%;
+  height: auto;
+  margin: 45px auto 0 auto;
+  border: 2px solid #141414;
+  border-radius: 0;
+}
